@@ -1,9 +1,17 @@
 {
   "name": "partners-email-relay",
   "version": "1.0.0",
-  "description": "Microsoft Graph webhook relay for n8n",
+  "description": "Microsoft Graph webhook relay — forwards new Outlook emails to n8n",
   "main": "server.js",
-  "scripts": { "start": "node server.js" },
-  "dependencies": { "axios": "^1.6.0", "express": "^4.18.2" },
-  "engines": { "node": ">=18.0.0" }
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "express": "^4.18.2",
+    "stripe": "^14.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
 }
